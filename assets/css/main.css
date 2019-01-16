@@ -2075,7 +2075,7 @@ input, select, textarea {
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b882 url("http://i67.tinypic.com/2w23ogl.jpg") bottom center no-repeat;
+		background: #ff6c00 url("http://i67.tinypic.com/2w23ogl.jpg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -2105,7 +2105,7 @@ input, select, textarea {
 		}
 
 		#banner a {
-			color: inherit;
+			color: #ff6c00;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
@@ -2140,7 +2140,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #35b88f;
+				color: #ff6c00;
 				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
 				border-bottom-color: rgba(53, 184, 143, 0.5);
 			}
