@@ -1,84 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>rainyday.js demo #6 (css background image)</title>
-    <style media="screen">
-      /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+			<title>Joshua Keslar • Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-      #background {
-        min-height: 100vh;
-        /* min-height: 1250px; */
-        background-image: url("19.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
-    <script src="./js/rainyday.min.js"></script>
-    <script>
-      function run() {
-        var rainyDay = new RainyDay({
-          image: "background",
-          blur: 0 // Target p element with ID, RainyDay.js will use backgorund image to simulate rain effects.
-        });
-        window.setTimeout(function() {
-          // rainyDay.destroy()
-        }, 1000);
-      }
-    </script>
-  </head>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Projects</a></li>
+							<li><a href="#two">Skills</a></li>
+							<li><a href="#three">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-  <body onload="run();">
-    <div style="width: 100%; margin: 0 auto;">
-      <div>
-        <p id="background"></p>
-      </div>
-    </div>
-  </body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Joshua Keslar</h1>
+							<h3 style='font-size: 1.5rem' >Full-Stack Developer</h3>
+							<p style='font-style: oblique;' >Driven to solve real-world problems with software solutions</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Discover</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a class="image"><img src="images/WellDone.PNG" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>WellDone International</h2>
+									<p>Contracted by a non-profit requesting a dashboard to monitor data gathered from sensors in well pumps throughout Cambodia.</p>
+									<ul class="actions">
+										<li><a href="welldone.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/MyStuff.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Use My Tech Stuff (MyStuff)</h2>
+									<p>Lambda School project providing a platform for posting, browsing, and renting various technological equipment from a public catalog of user posts.</p>
+									<ul class="actions">
+										<li><a href="mystuff.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/lifegpa.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>LifeGPA</h2>
+									<p>Lambda School project allowing users to login and track a list of "habits" they select and would like to complete each day.  LifeGPA will calculate a GPA for that user based on the percentage and consistency of habits completed versus opportunies to have completed those habits.</p>
+									<ul class="actions">
+										<li><a href="lifeGPA.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Skills</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Front-End</h3>
+									<div className='skills' style='display: flex;' >
+											<div className='right'>
+												<p>• HTML5</p>
+												<p>• CSS3</p>
+												<p>• JavaScript</p>
+										</div>
+										<div className='left' style='margin-left: 35%;'>
+											<p>• React.js</p>
+											<p>• Redux</p>
+											<p>• Next.js</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="icon solid major fa-database"></span>
+									<h3>Back-End</h3>
+									<p>• Node.js</p>
+									<p>• Express.js</p>
+									<p>• Knex.js</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-laptop-code"></span>
+									<h3>DevOps</h3>
+									<p>• Netlify</p>
+									<p>• Heroku</p>
+									<p>• Zeit</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Additional Skills</h3>
+									<div className='skills' style='display: flex;' >
+											<div className='right'>
+												<p>• Efficient</p>
+												<p>• Responsive</p>
+											</div>
+											<div className='left' style='margin-left: 35%;'>
+													<p>• Creative</p>
+													<p>• Dynamic</p>
+												</div>
+											</div>
+										</section>
+									</div>
+									<div style='display: flex;' >
+										<h2 style='margin-right: 10%;'>Resume</h2>
+										<a href='images/resume.pdf' download class="icon solid major fa-download"></a>
+									</div>
+								</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact</h2>
+							<div class="split style1">
+								<section>
+									<form method="post" action="https://formcarry.com/s/bN9Y1F-wrzW" method="POST" accept-charset="UTF-8">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Mesa, AZ</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a >DiamondMail91@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(480) 306-4669</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/Jkeslar21" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/joshua-keslar" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
